@@ -208,6 +208,16 @@ button[type="conocenos"]:hover {
     background-color: #2497da;
     min-width: auto;
     min-height: auto;
+    display: flex;
+    flex-direction: column;
+    flex : auto auto auto;
+}
+
+.service-header {
+    display: flexbox;
+    margin-bottom: 3rem;
+    
+    padding: auto;
 }
 
 .services-section h2 {
@@ -219,7 +229,8 @@ button[type="conocenos"]:hover {
 
 .services-section p {
     font-size: 26px;
-    margin-bottom: 3rem;
+    margin-bottom: auto;
+    padding: auto;
     
 
 }
@@ -228,8 +239,9 @@ button[type="conocenos"]:hover {
 
 .services-container {
     display: flex;
+
     justify-content: center;
-    gap: 2rem;
+    gap: auto;
     margin-bottom: auto;
     width: auto;
     height: auto;
@@ -238,23 +250,27 @@ button[type="conocenos"]:hover {
 }
 
 .service {
-    
-    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
     text-align: center;
     align-items: center;
     justify-content: center;
-    
-    padding: auto;
+    flex: auto auto auto;
+    padding-bottom: auto;
     border-radius: auto;
+    padding-left: auto;
+    padding-right: auto;
+    margin: auto;
 
 }
 
 .service-icon {
-    max-width: 300px;
-    max-height: 300px;
+    display: flex;
+   
     width: auto;
     height: auto;
-    margin: 0 auto;
+    margin: auto;
     flex: auto auto auto;
   
     padding: auto;
@@ -264,33 +280,22 @@ button[type="conocenos"]:hover {
 
     align-items: center;
     justify-content: center;
-
- 
-    
-
-    display: flex;
    
-   
-    margin-bottom: auto;
+    margin-bottom: 1rem;
   
 }
 
 .service-icon img {
+   
     
    
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center;
-    width: auto;
-    height: auto;
-   
-    min-width: none;
-    min-height: none;
-    align-items: center;
-    flex: auto auto auto;
 
     
-    max-width: 300px;
-    max-height: 300px;
+    
     
     
     
@@ -298,16 +303,24 @@ button[type="conocenos"]:hover {
 
 .service h3 {
     font-size: 24px;
-    margin-bottom: 1rem;
+    margin: auto;
+    padding: 1rem;
 }
 
 .service p {
     font-size: 16px;
+    padding: auto;
+    margin: auto;
 }
 
 .button {
-    display: inline-block;
+    display:flexbox;
     padding: 12px 24px;
+    margin: auto;
+    margin-top: 3rem;
+
+    align-items: center;
+    text-align: center;
     background-color: #000000;
     color: #fff;
     text-decoration: none;
