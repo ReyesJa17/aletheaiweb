@@ -1,0 +1,38 @@
+{% extends 'home/home.html' %}
+
+{% load static %}
+
+{% block title %}
+<title>Contact Us - Your Website Name</title>
+{% endblock title %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+<!-- Main Content Section -->
+<main>
+    <section id="contact-section" class="bg-light">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Feel free to reach out to us via email or phone. We are always happy to help!</p>
+                    <p>Email: info@yourwebsite.com</p>
+                    <p>Phone: 123-456-7890</p>
+                </div>
+                <div class="contact-form">
+                    <!-- Update the form action to the correct view that handles form submission -->
+                    <form action="{% url 'contact' %}" method="post">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock content %}

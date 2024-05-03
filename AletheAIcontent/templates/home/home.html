@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}<title>AletheAI</title>{% endblock title %}
+    
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    {% block extra_css %}{% endblock extra_css %}
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Company logo and name -->
+            <div class="logo-container">
+                <img src="{% static 'images/logo.png' %}" alt="Company Logo" class="company-logo">
+
+            </div>
+            
+            <!-- Navigation links -->
+            <a href="{% url 'home' %}" class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}">Home</a>
+            <a href="{% url 'services' %}" class="{% if request.resolver_match.url_name == 'services' %}active{% endif %}">Servicios</a>
+            <a href="{% url 'about' %}" class="{% if request.resolver_match.url_name == 'about' %}active{% endif %}">About Us</a>
+            <a href="{% url 'contact' %}" class="{% if request.resolver_match.url_name == 'contact' %}active{% endif %}">Contacto</a>
+
+        </nav>
+    </header>
+
+    {% block content %}
+        <section class="intro-text">
+            <div class="container">
+                <h1>Impulsa el crecimiento de tu empresa</h1>
+                <p>Sumergete en el éxito digital junto con AletheAI Solutions transformando tu PyME con IA</p>
+                <button type="info">MAS INFORMACION</button>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section class="projects-section">
+            <div class="projects-section-content">
+                <h2>La era de la <span class="blue">IA</span> ha llegado a México de la mano de <span class="blue">AletheIA Solutions</span></h2>
+                <p>AletheIA ofrece la automatización de diversos procesos mediante el uso de la inteligencia artificial. ¡Conoce nuestros servicios de chatbot y más!</p>
+                <button type="conocenos">Conocenos</button>
+            </div>
+            <div class="projects-section-image">
+                <img src="{% static 'images/robot1.webp' %}" alt="Projects Image">
+            </div>
+        </section>
+        
+        <!-- Custom Solutions Section -->
+        <section class="services-section">
+            <h2>¿Qué ofrecemos?</h2>
+            <p>Descubre como AletheIA te guía a mejorar tu negocio en este nuevo mercado emergente de la inteligencia artificial</p>
+            <div class="services-container">
+                <div class="service">
+                    <div class="service-icon">
+                        <img src="{% static 'images/robot2.webp' %}" alt="Service 1 Icon">
+                    </div>
+                    <h3>Para el servicio al cliente</h3>
+                    <p>Los chatbots con IA de AletheIA ayudarán a tu empresa a hacer más eficiente la atención al cliente</p>
+                </div>
+                <div class="service">
+                    <div class="service-icon">
+                        <img src="{% static 'images/robot3.webp' %}" alt="Service 2 Icon">
+                    </div>
+                    <h3>Para las ventas</h3>
+                    <p>Los IA podrá ayudarte a impulsar tus ventas con nuestros algoritmos de inteligencia artificial</p>
+                </div>
+                <div class="service">
+                    <div class="service-icon">
+                        <img src="{% static 'images/robot4.webp' %}" alt="Service 3 Icon">
+                    </div>
+                    <h3>Para el marketing</h3>
+                    <p>El marketing es escencial para el desarrollo de una empresa. AletheIA tiene herramientas que ayudarán a crear una campaña de marketing efectiva</p>
+                </div>
+            </div>
+            <a href="#" class="button">Contacto</a>
+        </section>
+        
+        <!-- About Us Section -->
+        <section id="Estadisticas" class="container">
+            <h2><span class="black">¡Los números</span> <span class="blue">no mienten!</span></h2>
+            <div class="container">
+                <div class="item">
+                  <p class="percentage">50%</p>
+                  <p class="text"><span class="blue">Mejora</span> en los tiempos de respuesta de proveedores en un <span class="blue">50%</span>, potenciando la fluidez operativa</p>
+                </div>
+                <div class="item">
+                  <div class="icon-container">
+                    <img src="{% static 'images/reloj.png' %}" alt="Clock Icon" class="icon">
+                  </div>
+                  <p class="text"><span class="blue">Reducción</span> del tiempo de manejo de tareas administrativas en un <span class="blue">40%</span>, permitiendo al personal dedicar más tiempo a la atención al cliente</p>
+                </div>
+                <div class="item">
+                  <div class="icon-container">
+                    <img src="{% static 'images/asistencia.png' %}" alt="Customer Icon" class="icon">
+                  </div>
+                  <p class="text"><span class="blue">Disminución</span> del tiempo de respuesta a las consultas de los clientes en un <span class="blue">60%</span>, aumentando significativamente los índices de satisfacción del cliente</p>
+                </div>
+              </div>
+        </section>
+
+        <section id="productos" class="container">
+            <h2>Nuestros productos</h2>
+            <p>AlethelA Solutions cuenta con productos que ya han sido implementados con éxito en empresas Mexicanas</p>
+            <div class="product-container">
+              <div class="product">
+                <img src="{% static 'images/mai.webp' %}" alt="MAI Assistant">
+                <h3>MAI Assistant</h3>
+                <p>MAI es uno de nuestros chatbots en whatsapp que se dedica a ayudar negocios con temas relacionados al pago de facturas. Utilizando IA, MAI ayuda a la gestión y mejora del servicio al cliente</p>
+              </div>
+              <div class="product">
+                <img src="{% static 'images/market.webp' %}" alt="Market Master">
+                <h3>Market Master</h3>
+                <p>El Market Master se dedica a crear campañas de marketing efectivas para tu empresa. Con algoritmos de IA avanzados el Market Master se encarga de producir y publicar contenido en redes sociales forma automática</p>
+              </div>
+            </div>
+            <a href="#" class="btn">Conoce Más</a>
+
+
+          </section>
+          <section id="casos-de-exito" class="container">
+            <h2>Casos de <span class="blue">éxito</span> </h2>
+            <div class="case-container">
+              <div class="case">
+                <img src="{% static 'images/cerveceria.webp' %}" alt="La Cervecería de Barrio Logo">
+                <p>MAI Assistant ayuda a la cervecería del barrio de manera efectiva con la verificación del pago de facturas de sus proveedores desde 2023</p>
+              </div>
+              <div class="case">
+                <img src="{% static 'images/tiktok.webp' %}" alt="TikTok Logo">
+                <p>Con ayuda del Market Master, hemos impulsado canales de TikTok haciendo que sus videos tengan cientos más de vistas</p>
+              </div>
+            </div>
+          </section>
+      
+
+          <section id="sobre-nosotros">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="{% static 'images/futuro.webp' %}" alt="Futuristic City" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                  <div class="content">
+                    <h2>Sobre nosotros</h2>
+                    <p>Fundada en 2023 por visionarios apasionados por las matemáticas, AlethelA Solutions se inspira en la "verdad" y el conocimiento para transformar Pymes en México mediante inteligencia artificial. Nos dedicamos a cerrar la brecha tecnológica, promoviendo la innovación, la optimización operativa y el crecimiento sostenible. AlethelA es más que tecnología; es un socio para el empoderamiento digital y la innovación colaborativa.</p>
+                    <a href="#" class="btn btn-primary">Conoce Más</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          
+
+    {% endblock content %}
+          <section id="contact" class="bg-light">
+            <div class="container">
+              <div class="contact-container">
+                <div class="contact-info">
+                  <h2>Get in Touch</h2>
+                  <p>Feel free to reach out to us via email or phone. We are always happy to help!</p>
+                  <p>Email: info@yourwebsite.com</p>
+                  <p>Phone: 123-456-7890</p>
+                </div>
+                <div class="contact-form">
+                  <form action="{% url 'contact' %}" method="post">
+                    {% csrf_token %}
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We are a company dedicated to providing quality products and services.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Information</h3>
+                <p>Email: contact@company.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p>Connect with us on social media.</p>
+                <!-- Social media links -->
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 AletheAI Solutions. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
