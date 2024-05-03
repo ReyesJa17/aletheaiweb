@@ -17,12 +17,15 @@
                 <img src="{% static 'images/logo.png' %}" alt="Company Logo" class="company-logo">
 
             </div>
-            
+            <div class="nav-container">
+              <a href="{% url 'home' %}" class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}">Home</a>
+              <a href="{% url 'services' %}" class="{% if request.resolver_match.url_name == 'services' %}active{% endif %}">Servicios</a>
+              <a href="{% url 'about' %}" class="{% if request.resolver_match.url_name == 'about' %}active{% endif %}">About Us</a>
+              <a href="{% url 'contact' %}" class="{% if request.resolver_match.url_name == 'contact' %}active{% endif %}">Contacto</a>
+
+            </div>
             <!-- Navigation links -->
-            <a href="{% url 'home' %}" class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}">Home</a>
-            <a href="{% url 'services' %}" class="{% if request.resolver_match.url_name == 'services' %}active{% endif %}">Servicios</a>
-            <a href="{% url 'about' %}" class="{% if request.resolver_match.url_name == 'about' %}active{% endif %}">About Us</a>
-            <a href="{% url 'contact' %}" class="{% if request.resolver_match.url_name == 'contact' %}active{% endif %}">Contacto</a>
+            
 
         </nav>
     </header>
@@ -50,8 +53,10 @@
         
         <!-- Custom Solutions Section -->
         <section class="services-section">
-            <h2>¿Qué ofrecemos?</h2>
-            <p>Descubre como AletheIA te guía a mejorar tu negocio en este nuevo mercado emergente de la inteligencia artificial</p>
+            <div class="service-header">
+              <h2>¿Qué ofrecemos?</h2>
+              <p>Descubre como AletheIA te guía a mejorar tu negocio en este nuevo mercado emergente de la inteligencia artificial</p>
+            </div>
             <div class="services-container">
                 <div class="service">
                     <div class="service-icon">
