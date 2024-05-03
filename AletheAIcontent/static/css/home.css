@@ -671,14 +671,14 @@ footer {
     }
 
     .service-icon {
-        width: 120px;
-        height: 120px;
+        width: 20px;
+        height: 20px;
         margin-bottom: 1rem;
     }
 
     .service-icon img {
-        max-width: 120px;
-        max-height: 120px;
+        max-width: 10px;
+        max-height: 10px;
     }
 
     #Estadisticas {
@@ -724,8 +724,8 @@ footer {
     }
 
     .product img {
-        width: 150px;
-        height: 150px;
+        width: 50px;
+        height: 50px;
         margin-bottom: 10px;
     }
 
