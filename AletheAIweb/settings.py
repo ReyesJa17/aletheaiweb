@@ -13,7 +13,7 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 
-
+import dj_database_url
 
 load_dotenv()
 
@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'AletheAIweb.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = os.getenv('DATABASE_URL', default={})
+DATABASES = {'default': dj_database_url.parse(os.getenv('DATABASE_URL'))}
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
