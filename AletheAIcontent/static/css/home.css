@@ -6,7 +6,7 @@ body, html {
 .container {
     max-width: 1000px; /* or your preferred max width */
 
-    min-height: 500PX;
+    min-height: auto;
     margin: auto;
     padding: 0 15px; /* or your preferred padding */
 }
