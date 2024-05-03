@@ -24,7 +24,7 @@ nav {
     color: #4baef2;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: right;
     padding: 0.5rem 1rem; /* Horizontal padding */
 }
 
