@@ -704,6 +704,52 @@ footer {
     .contact-form {
         flex-basis: 100%;
     }
+    .projects-section-image {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .projects-section-image img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .service-icon {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 1rem;
+    }
+
+    .service-icon img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    #Estadisticas .icon-container {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    #Estadisticas .icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    #Estadisticas .percentage {
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+
+    .product img {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 10px;
+    }
 }
 
 
