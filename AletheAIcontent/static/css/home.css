@@ -633,7 +633,7 @@ footer {
 
     .projects-section {
         flex-direction: column;
-        padding: 2rem;
+        padding: 2rem 1rem;
     }
 
     .projects-section-content {
@@ -646,6 +646,18 @@ footer {
         width: 100%;
         height: auto;
         margin-right: 0;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .projects-section-image img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .services-section {
+        padding: 2rem 1rem;
     }
 
     .services-container {
@@ -655,6 +667,22 @@ footer {
 
     .service {
         max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .service-icon {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 1rem;
+    }
+
+    .service-icon img {
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+    #Estadisticas {
+        padding: 2rem 1rem;
     }
 
     #Estadisticas .container {
@@ -665,6 +693,26 @@ footer {
         margin-bottom: 2rem;
     }
 
+    #Estadisticas .icon-container {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 15px;
+    }
+
+    #Estadisticas .icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    #Estadisticas .percentage {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    #productos {
+        padding: 2rem 1rem;
+    }
+
     .product-container {
         flex-direction: column;
         align-items: center;
@@ -672,6 +720,13 @@ footer {
 
     .product {
         max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .product img {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 10px;
     }
 
     .case-container {
@@ -703,52 +758,6 @@ footer {
     .contact-info,
     .contact-form {
         flex-basis: 100%;
-    }
-    .projects-section-image {
-        width: 100%;
-        height: auto;
-        margin-right: 0;
-        border-radius: 10px;
-        overflow: hidden;
-    }
-
-    .projects-section-image img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-
-    .service-icon {
-        width: 150px;
-        height: 150px;
-        margin-bottom: 1rem;
-    }
-
-    .service-icon img {
-        max-width: 150px;
-        max-height: 150px;
-    }
-
-    #Estadisticas .icon-container {
-        width: 100px;
-        height: 100px;
-        margin-bottom: 20px;
-    }
-
-    #Estadisticas .icon {
-        width: 100px;
-        height: 100px;
-    }
-
-    #Estadisticas .percentage {
-        font-size: 48px;
-        margin-bottom: 10px;
-    }
-
-    .product img {
-        width: 200px;
-        height: 200px;
-        margin-bottom: 10px;
     }
 }
 
