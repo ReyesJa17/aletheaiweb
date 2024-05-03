@@ -633,6 +633,8 @@ footer {
 
     .projects-section-image {
         margin-right: 0;
+        width: 100px;
+        height: 100px;
     }
 
     .services-container {
@@ -641,6 +643,12 @@ footer {
 
     .service {
         max-width: none;
+    }
+    .service-icon img {
+        max-width: 100px;
+        max-height: 100px;
+        object-fit: cover;
+        object-position: center;
     }
 
     #Estadisticas .container {
@@ -651,10 +659,30 @@ footer {
     #Estadisticas .item {
         margin-bottom: 2rem;
     }
+    #Estadisticas .icon {
+        width: 100px;
+        height: 100px;
+    }
 
     .product-container {
         flex-direction: column;
     }
+    .product img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+        object-fit: cover;
+        object-position: center;
+        flex: 0 0 auto;
+          
+          
+        overflow: hidden;
+        border-radius: 50%;
+        background-color: #fff;
+        
+        align-items: center;
+        justify-content: center;
+        }
 
     .case-container {
         flex-direction: column;
