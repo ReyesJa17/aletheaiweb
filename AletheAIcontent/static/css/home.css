@@ -608,11 +608,22 @@ footer {
     padding-top: 1rem;
 }
 
-@media (max-width: 768px) {
+/* ... (previous CSS code remains the same) ... */
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .intro-text {
+        padding: 2rem;
+    }
+
     .intro-text h1 {
         font-size: 36px;
-        margin-top: 5rem;
         margin-bottom: 2rem;
+        margin-top: 5rem;
     }
 
     .intro-text p {
@@ -632,64 +643,52 @@ footer {
     }
 
     .projects-section-image {
+        width: 100%;
+        height: auto;
         margin-right: 0;
-        width: 100px;
-        height: 100px;
     }
 
     .services-container {
         flex-direction: column;
+        align-items: center;
     }
 
     .service {
-        max-width: none;
-    }
-    .service-icon img {
-        max-width: 100px;
-        max-height: 100px;
-        object-fit: cover;
-        object-position: center;
+        max-width: 100%;
     }
 
     #Estadisticas .container {
         flex-direction: column;
-        align-items: center;
     }
 
     #Estadisticas .item {
         margin-bottom: 2rem;
     }
-    #Estadisticas .icon {
-        width: 100px;
-        height: 100px;
-    }
 
     .product-container {
         flex-direction: column;
-    }
-    .product img {
-        width: 100px;
-        height: 100px;
-        margin-bottom: 20px;
-        object-fit: cover;
-        object-position: center;
-        flex: 0 0 auto;
-          
-          
-        overflow: hidden;
-        border-radius: 50%;
-        background-color: #fff;
-        
         align-items: center;
-        justify-content: center;
-        }
+    }
+
+    .product {
+        max-width: 100%;
+    }
 
     .case-container {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .case {
+        max-width: 100%;
     }
 
     #sobre-nosotros .row {
         flex-direction: column;
+    }
+
+    #sobre-nosotros .col-md-6 {
+        max-width: 100%;
     }
 
     #sobre-nosotros .content {
@@ -699,22 +698,28 @@ footer {
 
     .contact-container {
         flex-direction: column;
-        padding: 2rem;
     }
 
     .contact-info,
     .contact-form {
         flex-basis: 100%;
-        margin-bottom: 2rem;
     }
+}
 
+
+
+
+@media (max-width: 768px) {
     .footer-content {
         flex-direction: column;
         align-items: center;
-        text-align: center;
     }
 
     .footer-section {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .footer-bottom {
+        border-top: none;
     }
 }
