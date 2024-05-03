@@ -671,8 +671,8 @@ footer {
     }
 
     .service-icon {
-        width: 20px;
-        height: 20px;
+        width: 50px;
+        height: 50px;
         margin-bottom: 1rem;
     }
 
@@ -694,14 +694,14 @@ footer {
     }
 
     #Estadisticas .icon-container {
-        width: 80px;
-        height: 80px;
+        width: 8px;
+        height: 8px;
         margin-bottom: 15px;
     }
 
     #Estadisticas .icon {
-        width: 80px;
-        height: 80px;
+        width: 8px;
+        height: 8px;
     }
 
     #Estadisticas .percentage {
@@ -724,8 +724,8 @@ footer {
     }
 
     .product img {
-        width: 50px;
-        height: 50px;
+        width: 5px;
+        height: 5px;
         margin-bottom: 10px;
     }
 
