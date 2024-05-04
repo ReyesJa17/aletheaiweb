@@ -14,7 +14,7 @@
         <nav>
             <!-- Company logo and name -->
             <div class="logo-container">
-              <img src="{{ logo.image.url }}" alt="logo" class="company-logo">
+              <img src="{% if logo %}{{ logo.image.url }}{% else %}{% static 'images/logo.png' %}{% endif %}" alt="Company Logo" class="company-logo">
 
             </div>
             <div class="nav-container">
