@@ -96,10 +96,64 @@ def home(request):
 
 def contact(request):
     try:
+        logo = Image.objects.get(name='logo')
         robot5 = Image.objects.get(name='robot5')
     except Image.DoesNotExist:
         robot5 = None
+        logo = None
     context = {
+        'logo': logo,
         'robot5': robot5,
     }
     return render(request, 'home/contact.html', context)
+
+def about(request):
+    try:
+        logo = Image.objects.get(name='logo')
+        info = Image.objects.get(name='info')
+        edificios = Image.objects.get(name='edificios')
+    except Image.DoesNotExist:
+        logo = None
+        info = None
+        edificios = None
+    context = {
+        'logo': logo,
+        'info': info,
+        'edificios': edificios,
+    }
+    return render(request, 'home/about.html', context)
+
+def services(request):
+    try:
+        logo = Image.objects.get(name='logo')
+        mai = Image.objects.get(name='mai')
+        school = Image.objects.get(name='school')
+        chef = Image.objects.get(name='chef')
+        mensaje = Image.objects.get(name='mensaje')
+        poli = Image.objects.get(name='poli')
+        mercado = Image.objects.get(name='mercado')
+        ask = Image.objects.get(name='ask')
+        cerveceria = Image.objects.get(name='cerveceria')
+    except Image.DoesNotExist:
+        logo = None
+        mai = None
+        school = None
+        chef = None
+        mensaje = None
+        poli = None
+        mercado = None
+        ask = None
+        cerveceria = None
+
+    context = {
+        'logo': logo,
+        'mai': mai,
+        'school': school,
+        'chef': chef,
+        'mensaje': mensaje,
+        'poli': poli,
+        'mercado': mercado,
+        'ask': ask,
+        'cerveceria': cerveceria,
+    }
+    return render(request, 'home/services.html', context)
