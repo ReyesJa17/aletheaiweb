@@ -2,7 +2,7 @@ from django.core.mail import send_mail
 from django.shortcuts import render, redirect
 from .forms import ContactForm
 from .models import MediaFile
-
+from .models import Image
 
 def contact(request):
     if request.method == 'POST':
@@ -48,3 +48,58 @@ def upload_media(request):
         return redirect('media_list')
     return render(request, 'upload_media.html')
 
+def home(request):
+    try:
+        logo = Image.objects.get(name='logo')
+        robot1 = Image.objects.get(name='robot1')
+        robot2 = Image.objects.get(name='robot2')
+        robot3 = Image.objects.get(name='robot3')
+        robot4 = Image.objects.get(name='robot4')
+        reloj = Image.objects.get(name='reloj')
+        asistencia = Image.objects.get(name='asistencia')
+        mai = Image.objects.get(name='mai')
+        market = Image.objects.get(name='market')
+        cerveceria = Image.objects.get(name='cerveceria')
+        tiktok = Image.objects.get(name='tiktok')
+        futuro = Image.objects.get(name='futuro')
+        
+    except Image.DoesNotExist:
+        logo = None
+        robot1 = None
+        robot2 = None
+        robot3 = None
+        robot4 = None
+        reloj = None
+        asistencia = None
+        mai = None
+        market = None
+        cerveceria = None
+        tiktok = None
+        futuro = None
+  
+    context = {
+        'logo': logo,
+        'robot1': robot1,
+        'robot2': robot2,
+        'robot3': robot3,
+        'robot4': robot4,
+        'reloj': reloj,
+        'asistencia': asistencia,
+        'mai': mai,
+        'market': market,
+        'cerveceria': cerveceria,
+        'tiktok': tiktok,
+        'futuro': futuro,
+   
+    }
+    return render(request, 'home/home.html', context)
+
+def contact(request):
+    try:
+        robot5 = Image.objects.get(name='robot5')
+    except Image.DoesNotExist:
+        robot5 = None
+    context = {
+        'robot5': robot5,
+    }
+    return render(request, 'home/contact.html', context)

@@ -15,3 +15,7 @@ class MediaFile(models.Model):
     name = models.CharField(max_length=255)
     file = models.FileField(upload_to='media/')
     uploaded_at = models.DateTimeField(auto_now_add=True)
+
+class Image(models.Model):
+    name = models.CharField(max_length=100)
+    image = models.ImageField(upload_to='images/')
