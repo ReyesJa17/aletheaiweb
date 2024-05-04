@@ -10,3 +10,8 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+    
+class MediaFile(models.Model):
+    name = models.CharField(max_length=255)
+    file = models.FileField(upload_to='media/')
+    uploaded_at = models.DateTimeField(auto_now_add=True)

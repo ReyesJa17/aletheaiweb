@@ -1,6 +1,8 @@
 from django.core.mail import send_mail
 from django.shortcuts import render, redirect
 from .forms import ContactForm
+from .models import MediaFile
+
 
 def contact(request):
     if request.method == 'POST':
@@ -37,4 +39,12 @@ def about(request):
 
 def success(request):
     return render(request, 'home/ContactSuccess.html')
+
+
+def upload_media(request):
+    if request.method == 'POST' and request.FILES['file']:
+        media_file = MediaFile(name=request.FILES['file'].name, file=request.FILES['file'])
+        media_file.save()
+        return redirect('media_list')
+    return render(request, 'upload_media.html')
 

@@ -11,6 +11,6 @@ urlpatterns = [
     path('contact/', views.contact, name='contact'),  # Points to the contact view
     path('success/', views.success, name='success')  # Points to the contact_success view
 
-]
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
