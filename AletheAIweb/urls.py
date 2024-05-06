@@ -18,9 +18,11 @@ Including another URLconf
 # Example of what it might look like in AletheAIweb/urls.py
 from django.contrib import admin
 from django.urls import include, path
+from django.conf.urls.static import static
+from django.conf import settings
 
 urlpatterns = [
     path('', include('AletheAIcontent.urls')),
     path('admin/', admin.site.urls),  # Include URLs from staticcontent app
     # ... other URL patterns ...
-]
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
