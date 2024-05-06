@@ -107,7 +107,7 @@ nav a:focus {
     } 
 
     .services-container {
-        flex-direction: column;
+        flex-direction:row;
         gap: 2rem;
     }
 
