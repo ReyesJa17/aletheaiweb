@@ -75,6 +75,19 @@ nav a:focus {
     .logo-container {
         margin-bottom: 10px; /* Space between logo and links on small screens */
     }
+
+    .intro-text h1 {
+        font-size: 36px; /* Adjust the font size for the h1 */
+        margin-bottom: 3rem;
+        margin-top: 5rem;
+    }
+
+    .intro-text p {
+        font-size: 12px; /* Adjust the font size for the p */
+        margin-bottom: 3rem;
+    }
+
+    
 }
 
 
