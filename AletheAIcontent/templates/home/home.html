@@ -14,7 +14,7 @@
         <nav>
             <!-- Company logo and name -->
             <div class="logo-container">
-              <img src="{% if logo %}{{ logo.image.url }}{% else %}{% static 'images/default_logo.png' %}{% endif %}" alt="logo" class="company-logo">
+              <img src="{% static 'images/logo.png' %}" alt="logo" class="company-logo">
             </div>
 
             </div>
@@ -61,21 +61,21 @@
             <div class="services-container">
                 <div class="service">
                     <div class="service-icon">
-                        <img src="{{ robot2.image.url }}" alt="Service 1 Icon">
+                        <img src="{% static 'images/robot2.webp' %}" alt="Service 1 Icon">
                     </div>
                     <h3>Para el servicio al cliente</h3>
                     <p>Los chatbots con IA de AletheIA ayudarán a tu empresa a hacer más eficiente la atención al cliente</p>
                 </div>
                 <div class="service">
                     <div class="service-icon">
-                        <img src="{{ robot3.image.url }}" alt="Service 2 Icon">
+                        <img src="{% static 'images/robot3.webp' %}" alt="Service 2 Icon">
                     </div>
                     <h3>Para las ventas</h3>
                     <p>Los IA podrá ayudarte a impulsar tus ventas con nuestros algoritmos de inteligencia artificial</p>
                 </div>
                 <div class="service">
                     <div class="service-icon">
-                        <img src="{{ robot4.image.url }}" alt="Service 3 Icon">
+                        <img src="{% static 'images/robot4.webp' %}" alt="Service 3 Icon">
                     </div>
                     <h3>Para el marketing</h3>
                     <p>El marketing es escencial para el desarrollo de una empresa. AletheIA tiene herramientas que ayudarán a crear una campaña de marketing efectiva</p>
@@ -94,13 +94,13 @@
                 </div>
                 <div class="item">
                   <div class="icon-container">
-                    <img src="{{ reloj.image.url }}" alt="Clock Icon" class="icon">
+                    <img src="{% static 'images/reloj.png' %}" alt="Clock Icon" class="icon">
                   </div>
                   <p class="text"><span class="blue">Reducción</span> del tiempo de manejo de tareas administrativas en un <span class="blue">40%</span>, permitiendo al personal dedicar más tiempo a la atención al cliente</p>
                 </div>
                 <div class="item">
                   <div class="icon-container">
-                    <img src="{{ asistencia.image.url }}" alt="Customer Icon" class="icon">
+                    <img src="{% static 'images/asistencia.png' %}" alt="Customer Icon" class="icon">
                   </div>
                   <p class="text"><span class="blue">Disminución</span> del tiempo de respuesta a las consultas de los clientes en un <span class="blue">60%</span>, aumentando significativamente los índices de satisfacción del cliente</p>
                 </div>
@@ -112,12 +112,12 @@
             <p>AlethelA Solutions cuenta con productos que ya han sido implementados con éxito en empresas Mexicanas</p>
             <div class="product-container">
               <div class="product">
-                <img src="{{ mai.image.url }}" alt="MAI Assistant">
+                <img src="{% static 'images/mai.webp' %}" alt="MAI Assistant">
                 <h3>MAI Assistant</h3>
                 <p>MAI es uno de nuestros chatbots en whatsapp que se dedica a ayudar negocios con temas relacionados al pago de facturas. Utilizando IA, MAI ayuda a la gestión y mejora del servicio al cliente</p>
               </div>
               <div class="product">
-                <img src="{{ market.image.url }}" alt="Market Master">
+                <img src="{% static 'images/market.webp' %}" alt="Market Master">
                 <h3>Market Master</h3>
                 <p>El Market Master se dedica a crear campañas de marketing efectivas para tu empresa. Con algoritmos de IA avanzados el Market Master se encarga de producir y publicar contenido en redes sociales forma automática</p>
               </div>
@@ -130,11 +130,11 @@
             <h2>Casos de <span class="blue">éxito</span> </h2>
             <div class="case-container">
               <div class="case">
-                <img src="{{ cerveceria.image.url }}" alt="La Cervecería de Barrio Logo">
+                <img src="{% static 'images/cerveceria.webp' %}" alt="La Cervecería de Barrio Logo">
                 <p>MAI Assistant ayuda a la cervecería del barrio de manera efectiva con la verificación del pago de facturas de sus proveedores desde 2023</p>
               </div>
               <div class="case">
-                <img src="{{ tiktok.image.url }}" alt="TikTok Logo">
+                <img src="{% static 'images/tiktok.webp' %}" alt="TikTok Logo">
                 <p>Con ayuda del Market Master, hemos impulsado canales de TikTok haciendo que sus videos tengan cientos más de vistas</p>
               </div>
             </div>
@@ -145,7 +145,7 @@
             <div class="container">
               <div class="row">
                 <div class="col-md-6">
-                  <img src="{{ futuro.image.url }}" alt="Futuristic City" class="img-fluid">
+                  <img src="{% static 'images/futuro.webp' %}" alt="Futuristic City" class="img-fluid">
                 </div>
                 <div class="col-md-6">
                   <div class="content">
