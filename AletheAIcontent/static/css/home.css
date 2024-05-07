@@ -26,6 +26,10 @@ header {
     transform: translateY(-100%);
   }
   
+  main {
+    padding-top: 100px; /* Adjust this value based on the height of your navigation bar */
+  }
+  
   nav {
     display: flex;
     justify-content: space-between;
@@ -114,8 +118,18 @@ header {
     }
 
     .projects-section {
-        padding: 2rem;
+        padding: auto;
         flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    } 
+
+    .projects-section-content {
+        flex-direction: column;
+        padding-right: auto;
+        padding-left: auto;
+        align-items: center;
+        
     }
 
     .projects-section h2 {
@@ -128,8 +142,15 @@ header {
     }
 
     .projects-section-image {
-        margin-left: 0;
-        margin-top: 2rem;
+        
+        margin-left: 2rem;
+        margin-right: 2rem;
+        align-items: center;
+        min-width: 150px;
+        min-height: 150px;
+
+
+
     } 
 
     .services-section {
@@ -250,6 +271,10 @@ header {
     #sobre-nosotros p {
         font-size: 12px;
     }
+    #sobre-nosotros .content {
+        padding-left: 0;
+
+    }
 
     #contact {
         flex-direction:column;
@@ -261,20 +286,6 @@ header {
         gap: 2rem;
         align-items: center;
     }
-
-
-
-
-
-   
-
-    
-
-
-
-    
-
-    
 
 
 
@@ -767,34 +778,35 @@ color: #777;
 
 #sobre-nosotros .col-md-6 {
     flex: 0 0 50%;
-    max-width: 50%;
+    max-width: 69%;
 }
 
 #sobre-nosotros img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
 }
 
 #sobre-nosotros .content {
-padding-left: 40px;
+    padding-left: auto;
 }
 
 #sobre-nosotros h2 {
-font-size: 36px;
-margin-bottom: 20px;
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
 #sobre-nosotros p {
-font-size: 18px;
-line-height: 1.6;
-margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
 }
 
 #sobre-nosotros .btn {
-font-size: 18px;
-padding: 12px 30px;
+    font-size: 18px;
+    padding: 12px 30px;
 }
 
 #contact {
