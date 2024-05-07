@@ -14,7 +14,9 @@
     <header>
       <nav>
         <div class="logo-container">
-          <img src="{% static 'images/logo.png' %}" alt="logo" class="company-logo">
+          <a href="{% url 'home' %}">
+            <img src="{% static 'images/logo.png' %}" alt="logo" class="company-logo">
+          </a>
         </div>
         <div class="nav-container">
           <a href="{% url 'home' %}" class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}">Home</a>
