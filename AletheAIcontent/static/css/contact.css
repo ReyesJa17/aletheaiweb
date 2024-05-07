@@ -7,18 +7,22 @@ body, html {
 
 .about-us {
     display: flex;
-
+    flex: auto auto auto;
     align-items: center;
-    justify-content: space-between;
+    justify-content:center;
     text-align: center;
-    padding: 4rem;
+    padding: auto;
     background: #ffffff;
 }
 
 .about-us-content {
+    padding: auto;
+    padding-right: 3rem;
+    flex: auto auto auto;
+    flex-basis: 50%;
+    text-align: left;
 
-    padding-right: 5rem;
-    padding-left: 15rem;
+
 
 }
 
@@ -30,18 +34,17 @@ body, html {
 .about-us p {
     font-size: 22px;
     line-height: 1.5;
-    padding-left: 10rem;
-    padding-right: 10rem;
+
 
 }
 
 .about-us-image {
     flex: 0 0 auto;
-    width: 400px;
-    height: 400px;
+    max-width: 300px;
+    max-height: 300px;
     border-radius: 50%;
     overflow: hidden;
-    margin-right: 15rem;
+
 }
 
 .about-us-image img {
@@ -49,4 +52,21 @@ body, html {
     height: 100%;
     object-fit: cover;
     object-position:right;
+}
+
+@media (max-width: 768px) {
+    .about-us {
+        flex-direction: column;
+        padding: 2rem;
+        align-items: center;
+    }
+
+    .about-us-content {
+        padding: auto;
+        margin: auto;
+    }
+
+    .about-us-image {
+        margin: auto;
+    }
 }
