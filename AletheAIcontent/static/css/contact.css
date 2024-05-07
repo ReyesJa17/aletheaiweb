@@ -61,6 +61,7 @@ body, html {
         align-items: center;
     }
 
+
     .about-us-content {
         padding: auto;
         margin: auto;
@@ -69,4 +70,16 @@ body, html {
     .about-us-image {
         margin: auto;
     }
+
+    .about-us h1 {
+        font-size: 48px;
+    }
+
+    .about-us p {
+        font-size: 18px;
+    }
+
+ 
+
+    
 }

@@ -82,8 +82,8 @@ body, html {
     padding: 30px;
     border-radius: 8px;
 
-    margin-left: 7rem;
-    margin-right: 7rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .mision h3, .vision h3 {
@@ -197,7 +197,7 @@ body, html {
     }
 
     .mision, .vision {
-        width: 100%;
+        width: auto;
         margin-left: 0;
         margin-right: 0;
         margin-top: 2rem;
