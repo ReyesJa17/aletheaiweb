@@ -13,67 +13,78 @@ body, html {
 
 
 header {
-    background: #ffffff;
-    color: #070607;
-    padding: 1rem;
-    text-align: center;
-}
-
-nav {
-    background: #ffffff; /* A slightly different shade from the header for contrast */
-    color: #4baef2;
+    background-color: #ffffff;
+  }
+  
+  nav {
     display: flex;
-    justify-content:space-between;
-    align-items: flex-end;
-    padding: 0.5rem 1rem; /* Horizontal padding */
-}
-
-.logo-container {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+  }
+  
+  .logo-container {
     display: flex;
-    align-items: left;
-}
-
-.company-logo {
-    height: 100px; /* Adjust the size as needed */
+    align-items: center;
+  }
+  
+  .company-logo {
+    height: 100px;
     width: auto;
-   
-}
-
-
-
-nav a {
-    color: #000000; /* White text for links */
- 
-    padding: 0.5rem 1rem; /* Padding around the text */
-    display: inline-block; /* Allows padding to take effect */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
-}
-
-nav a:hover,
-nav a:focus {
-    background-color: #0a7ecc; /* Darker background on hover/focus for feedback */
-    color: #ffffff; /* Optional: Change the text color slightly on hover/focus */
-}
-
-/* Responsive navigation menu */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
+  }
+  
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  
+  .nav-container {
+    display: flex;
+  }
+  
+  nav a {
+    color: #000000;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    transition: background-color 0.3s;
+  }
+  
+  nav a:hover,
+  nav a:focus {
+    background-color: #0a7ecc;
+    color: #ffffff;
+  }
+  
+  nav a.active {
+    background-color: #0a7ecc;
+    color: #ffffff;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
     }
-
+  
+    .nav-container {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: #ffffff;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  
+    .nav-container.open {
+      display: flex;
+    }
+  
     nav a {
-        display: block; /* Stack the links vertically on smaller screens */
-        width: 100%; /* Full width */
-        box-sizing: border-box; /* Include padding in width */
-    }
-
-    nav a:not(:last-child) {
-        border-bottom: 1px solid #4baef2; /* Add a separator between the links */
-    }
-
-    .logo-container {
-        margin-bottom: 10px; /* Space between logo and links on small screens */
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #4baef2;
     }
 
     .intro-text h1 {

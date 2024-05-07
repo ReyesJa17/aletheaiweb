@@ -7,28 +7,23 @@
     
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <script src="{% static 'js/script.js' %}"></script>
     {% block extra_css %}{% endblock extra_css %}
 </head>
 <body>
     <header>
-        <nav>
-            <!-- Company logo and name -->
-            <div class="logo-container">
-              <img src="{% static 'images/logo.png' %}" alt="logo" class="company-logo">
-            </div>
-
-            </div>
-            <div class="nav-container">
-              <a href="{% url 'home' %}" class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}">Home</a>
-              <a href="{% url 'services' %}" class="{% if request.resolver_match.url_name == 'services' %}active{% endif %}">Servicios</a>
-              <a href="{% url 'about' %}" class="{% if request.resolver_match.url_name == 'about' %}active{% endif %}">About Us</a>
-              <a href="{% url 'contact' %}" class="{% if request.resolver_match.url_name == 'contact' %}active{% endif %}">Contacto</a>
-
-            </div>
-            <!-- Navigation links -->
-            
-
-        </nav>
+      <nav>
+        <div class="logo-container">
+          <img src="{% static 'images/logo.png' %}" alt="logo" class="company-logo">
+        </div>
+        <div class="nav-container">
+          <a href="{% url 'home' %}" class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}">Home</a>
+          <a href="{% url 'services' %}" class="{% if request.resolver_match.url_name == 'services' %}active{% endif %}">Servicios</a>
+          <a href="{% url 'about' %}" class="{% if request.resolver_match.url_name == 'about' %}active{% endif %}">About Us</a>
+          <a href="{% url 'contact' %}" class="{% if request.resolver_match.url_name == 'contact' %}active{% endif %}">Contacto</a>
+        </div>
+        <div class="menu-toggle">&#9776;</div>
+      </nav>
     </header>
 
     {% block content %}
