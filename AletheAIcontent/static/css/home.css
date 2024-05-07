@@ -27,7 +27,7 @@ header {
   }
   
   main {
-    padding-top: 100px; /* Adjust this value based on the height of your navigation bar */
+    padding-top: 150px; /* Adjust this value based on the height of your navigation bar */
   }
   
   nav {
@@ -61,6 +61,7 @@ header {
     color: #000000;
     padding: 0.5rem 1rem;
     display: inline-block;
+    text-decoration: none;
     transition: background-color 0.3s;
   }
   
@@ -90,6 +91,7 @@ header {
     display: block;
     padding: 0.5rem 0;
     border-bottom: 1px solid #4baef2;
+    text-decoration: none;
   }
   
   @media (max-width: 768px) {
@@ -307,6 +309,8 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     padding: 1rem;
+    min-height: 700px;
+
     flex: auto auto auto;
 }
 
