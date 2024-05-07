@@ -14,7 +14,16 @@ body, html {
 
 header {
     background-color: #ffffff;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+  }
+  
+  header.hide {
+    transform: translateY(-100%);
   }
   
   nav {
