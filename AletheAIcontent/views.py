@@ -150,3 +150,13 @@ def services(request):
         'cerveceria': cerveceria,
     }
     return render(request, 'home/services.html', context)
+
+def terms(request):
+    try:
+        logo = Image.objects.get(name='logo')
+    except Image.DoesNotExist:
+        logo = None
+    context = {
+        'logo': logo,
+    }
+    return render(request, 'home/terms.html', context)
