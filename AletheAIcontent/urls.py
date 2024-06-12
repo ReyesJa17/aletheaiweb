@@ -10,7 +10,8 @@ urlpatterns = [
     path('about/', views.about, name='about'),  # Points to the about view
     path('contact/', views.contact, name='contact'),  # Points to the contact view
     path('success/', views.success, name='success') , # Points to the contact_success view
-    path('terms/', views.terms, name='terms')  # Points to the terms view
+    path('terms/', views.terms, name='terms'),  # Points to the terms view
+    path('privacy/', views.privacy, name='privacy')  # Points to the privacy view
 
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

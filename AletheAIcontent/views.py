@@ -160,3 +160,13 @@ def terms(request):
         'logo': logo,
     }
     return render(request, 'home/terms.html', context)
+
+def privacy(request):
+    try:
+        logo = Image.objects.get(name='logo')
+    except Image.DoesNotExist:
+        logo = None
+    context = {
+        'logo': logo,
+    }
+    return render(request, 'home/privacy.html', context)
